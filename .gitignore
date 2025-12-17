@@ -1,0 +1,4 @@
+bin/result_*.csv
+bin/*.png
+
+.idea/**
