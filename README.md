@@ -16,5 +16,5 @@ START_TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S") watch -n 120 ./measure_speed.sh
 ## How to plot
 
 ```shell
-graph bin/<TARGET-CSV>.csv -x 'timestamp' -y 'download_mbps,upload_mbps' -o bin/measure.png
+graph bin/<TARGET-CSV>.csv --time-format-input '%Y%m%d%H%M%S' -x 'timestamp' -y 'download_mbps,upload_mbps' -o bin/measure.png
 ```
